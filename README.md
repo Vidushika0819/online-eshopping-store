@@ -38,7 +38,7 @@ All CRUD operations are implemented:
 ---
 
 ## 🗂️ Project Folder Structure
-
+```
 online-eshopping-store/
 │
 ├── src/
@@ -68,7 +68,7 @@ online-eshopping-store/
 ├── .classpath
 ├── .project
 └── LICENSE
-
+```
 
 ---
 
