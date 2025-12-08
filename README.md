@@ -1,149 +1,123 @@
-🛒 Online E-Shopping Store (Login + Product CRUD)
+🏨 Hotel Reservation System
 
-A simple Java Web Application built using JSP, Servlets, MVC, and MySQL.
-This project includes User Login and Product Management (CRUD) using JDBC.
+A web-based Hotel Reservation Management System built using HTML, CSS, PHP, and MySQL.
+This project includes user reservation booking, admin management, venue/room handling, and full CRUD operations for users, reservations, and venues.
 
-This is a student project demonstrating basic Java web development, MVC, and database handling.
+🔧 Features
+👤 User Features
 
-✅ Features
-🔐 1. User Authentication
+User registration and login
 
-Login form
+Search and book available hotel rooms/venues
 
-Authentication with MySQL
+View all reservations
 
-Session handling
+Cancel reservations
 
-Redirect after login
+🛠️ Admin Features
 
-🛍️ 2. Product Management (CRUD)
+Manage users (CRUD)
 
-Admin can:
+Manage venues/rooms (CRUD)
 
-Add new products
+Manage reservations (CRUD)
 
-Edit product details
+Upload venue images
 
-Delete products
+View booking history
 
-View all products
+💳 Payment Simulation
 
-🧠 3. MVC Architecture
+Simple payment page for demo purposes (no real payment processing)
 
-The project follows the MVC structure:
+🛠 Tech Stack
 
-Model → Database logic
+Backend: PHP
+Frontend: HTML, CSS
+Database: MySQL (SQL dump included)
+Local Development: XAMPP / WAMP / LAMP
 
-View → JSP pages
+🚀 Quick Setup (Local Development)
+1. Install a local server
 
-Controller → Servlets
+XAMPP (Windows)
 
-📂 Project Structure
+WAMP (Windows)
 
-online-eshopping-store/
+LAMP (Linux)
+
+2. Add project to your server
+
+Place your project folder in:
+
+XAMPP → C:\xampp\htdocs\hotel-reservation-system
+
+3. Create the database
+
+Open phpMyAdmin → create:
+
+hotel_reservation_db
+
+4. Import SQL
+
+Inside phpMyAdmin:
+
+Select hotel_reservation_db
+
+Click Import
+
+Choose file:
+
+database/hotel_reservation.sql
+
+
+Or via terminal:
+
+mysql -u root -p hotel_reservation_db < hotel_reservation.sql
+
+5. Configure database connection
+
+Open your DB connection file (example: db_connect.php, config.php, etc.):
+
+$conn = new mysqli('localhost','root','','hotel_reservation_db');
+
+6. Run the project
+
+Start Apache + MySQL.
+
+Open:
+
+http://localhost/hotel-reservation-system/src/index.php
+
+📁 Project Structure
+hotel-reservation-system/
 │
-├── src/
-│   └── main/
-│       ├── java/
-│       │   ├── login/
-│       │   │   ├── DBConnection.java
-│       │   │   ├── LoginController.java
-│       │   │   ├── LoginModel.java
-│       │   │   └── LoginServlet.java
-│       │   │
-│       │   └── store/
-│       │       ├── DBConnection.java
-│       │       ├── StoreModel.java
-│       │       ├── StoreControl.java
-│       │       ├── InsertServlet.java
-│       │       ├── UpdateServlet.java
-│       │       ├── DeleteServlet.java
-│       │       └── GetAllServlet.java
-│       │
-│       └── webapp/
-│           ├── css/
-│           ├── js/
-│           ├── images/
-│           │
-│           ├── WEB-INF/
-│           │   └── web.xml
-│           │
-│           ├── display.jsp
-│           ├── login.jsp
-│           ├── HomePage.jsp
-│           ├── INSERT.jsp
-│           ├── UPDATE.jsp
-│           └── profile.jsp
+├─ src/                 # PHP pages (user + admin)
 │
-├── database/
-│   └── online_shop.sql
+├─ assets/
+│   ├─ images/          # Images for UI
+│   └─ uploads/         # Venue image uploads
 │
-└── README.md
+├─ database/
+│   └─ hotel_reservation.sql
+│
+└─ README.md
 
-🛢 Database Tables
-1. users
+✅ Notes & Tips
 
-Used for login authentication:
+Do not commit sensitive config files (use .gitignore)
 
-Column	Type
-id	INT (PK)
-username	VARCHAR
-password	VARCHAR
-2. products
+Always sanitize inputs to avoid SQL injection
 
-Used for product CRUD:
+Add temporary admin login details here (optional for reviewers)
 
-Column	Type
-id	INT (PK)
-name	VARCHAR
-price	DECIMAL
-description	TEXT
-image	VARCHAR (optional)
-⚙️ How to Run the Project
-1. Import Project
+📞 Contact
 
-Open Eclipse / IntelliJ / NetBeans
-
-Import as Existing Java Project
-
-2. Setup Database
-
-Create the database:
-
-CREATE DATABASE online_shop;
-
-
-Import the .sql file from the database/ folder.
-
-3. Configure Database Connection
-
-Open DBConnection.java and update:
-
-String url = "jdbc:mysql://localhost:3306/online_shop";
-String username = "root";
-String password = "";
-
-4. Run on Tomcat
-
-Start Apache Tomcat
-Go to:
-
-http://localhost:8080/online-eshopping-store/
-
-🧰 Technologies Used
-
-Java (JSP + Servlets)
-
-JDBC
-
-MySQL
-
-HTML / CSS
-
-Apache Tomcat
-
-MVC Architecture
+Vidushika Madhushani
+GitHub: Vidushika0819
+Email: (optional — add only if you want)
 
 📄 License
 
-This project is licensed under the MIT License.
+This project is released under the MIT License.
+See LICENSE for details.
