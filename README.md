@@ -103,9 +103,11 @@ JDBC
 
 MySQL
 
+HTML, CSS
+
 Apache Tomcat
 
-MVC Architecture
+MVC architecture
 
 ## 📄 License
 
