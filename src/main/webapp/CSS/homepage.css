@@ -1,0 +1,108 @@
+	        body {
+	            font-family: Arial, sans-serif;
+	            margin: 0;
+	            padding: 0;
+	        }
+	        .header {
+	            background-color: #334d00;
+	            color: white;
+	            padding: 10px 20px;
+	            display: flex;
+	            justify-content: space-between;
+	            align-items: center;
+	        }
+	        
+	        .logo a {
+	        	font-family:Trebuchet MS , sans-serif;
+	        	text-decoration:none;
+	        	color: white;
+	        	font-size: 30px;
+	        	font-weight:bold;
+	        }
+	        
+	        .search-container {
+	        	display:flex;
+	        	align-items:center;
+	        	gap:15px;
+	        }
+	        
+	        .search-container input[type="text"] {
+	        	width:450px;
+	        	height:20px;
+	        	padding:5px 10px;
+	        	font-size:16px;
+	        	border-radius:5px;
+	        }
+	        
+	        .nav-bar{
+	        	background: linear-gradient( #223300,  #446600, #223300);
+	        	padding:10px 0;
+	        }
+	        
+	        .nav-links {
+	        	display:flex;
+	        	justify-content:space-between;
+	        	width:100%
+	        }
+			
+			.nav-links a {
+				flex:1;
+				text-align:center;
+				color:white;
+				text-decoration:none;
+				font-weight:bold;
+				padding:10 px 0;
+			}
+			
+			.nav-links a:hover {
+				background-color:#555;
+			}
+	        .product-grid {
+	            display: grid;
+	            grid-template-columns: repeat(4, 1fr);
+	            gap: 20px;
+	            padding: 20px;
+	            background-color: #ddff99;
+	        }
+	        .product-card {
+	            border: 1px solid #ccc;
+	            padding: 15px;
+	            text-align: center;
+	            background-color: #f7ffe6;
+	        }
+	        .product-card img {
+	            width: 100px;
+	            height: 100px;
+	        }
+	        .product-card button {
+	            margin: 5px;
+	            padding: 8px 12px;
+	            background-color: #2ecc71;
+	            color: white;
+	            border: none;
+	            cursor: pointer;
+	        }
+	        .footer {
+	            background-color: #334d00;
+	            color: white;
+	            text-align: center;
+	            padding: 15px;
+	        }
+	        .cart-icon {
+	            display: inline;
+	            gap: 15px;
+	        }
+	        
+	        .user-icon{
+	        	width:40px;
+	        	height:40px;
+	        	border-radius:50%;
+	        	object-fit:cover;
+	        }
+	        
+	        #noResultsMessage {
+			    font-size: 18px;
+			    margin-top: 20px;
+			}
+	        
+	        
