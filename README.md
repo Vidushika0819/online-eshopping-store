@@ -3,14 +3,14 @@
 A simple Java Web Application built using JSP, Servlets, MVC, and MySQL.
 This project includes User Login and Product Management (CRUD) using JDBC.
 
-This is a student project demonstrating basic Java web development, servlet handling, and database operations.
+This is a student project demonstrating basic Java web development, MVC, and database handling.
 
 ✅ Features
 🔐 1. User Authentication
 
-User login form
+Login form
 
-Authentication using MySQL
+Authentication with MySQL
 
 Session handling
 
@@ -20,25 +20,26 @@ Redirect after login
 
 Admin can:
 
-Add a new product
+Add new products
 
 Edit product details
 
-Delete product
+Delete products
 
 View all products
 
 🧠 3. MVC Architecture
 
-Project follows a clean structure:
+The project follows the MVC structure:
 
 Model → Database logic
 
-Controller → Servlets
-
 View → JSP pages
 
+Controller → Servlets
+
 📂 Project Structure
+
 online-eshopping-store/
 │
 ├── src/
@@ -65,13 +66,13 @@ online-eshopping-store/
 │           ├── images/
 │           │
 │           ├── WEB-INF/
-│           │   └── xml.xml
+│           │   └── web.xml
 │           │
 │           ├── display.jsp
 │           ├── login.jsp
 │           ├── HomePage.jsp
 │           ├── INSERT.jsp
-│           └── UPDATE.jsp
+│           ├── UPDATE.jsp
 │           └── profile.jsp
 │
 ├── database/
@@ -80,51 +81,51 @@ online-eshopping-store/
 └── README.md
 
 🛢 Database Tables
-1️⃣ users
+1. users
 
-Used for login authentication
+Used for login authentication:
 
-id (INT, PK)
-username (VARCHAR)
-password (VARCHAR)
+Column	Type
+id	INT (PK)
+username	VARCHAR
+password	VARCHAR
+2. products
 
-2️⃣ products
+Used for product CRUD:
 
-Used for product CRUD
-
-id (INT, PK)
-name (VARCHAR)
-price (DECIMAL)
-description (TEXT)
-image (VARCHAR)  -- optional
-
+Column	Type
+id	INT (PK)
+name	VARCHAR
+price	DECIMAL
+description	TEXT
+image	VARCHAR (optional)
 ⚙️ How to Run the Project
-1️⃣ Import Project
+1. Import Project
 
-Open in Eclipse / IntelliJ / NetBeans
+Open Eclipse / IntelliJ / NetBeans
+
 Import as Existing Java Project
 
-2️⃣ Setup Database
+2. Setup Database
 
-Create database:
+Create the database:
 
 CREATE DATABASE online_shop;
 
 
-Import your .sql file inside database/ folder.
+Import the .sql file from the database/ folder.
 
-3️⃣ Set Database Credentials
+3. Configure Database Connection
 
-Update DBConnection.java:
+Open DBConnection.java and update:
 
 String url = "jdbc:mysql://localhost:3306/online_shop";
 String username = "root";
 String password = "";
 
-4️⃣ Deploy on Tomcat
+4. Run on Tomcat
 
-Run the project on Apache Tomcat
-
+Start Apache Tomcat
 Go to:
 
 http://localhost:8080/online-eshopping-store/
@@ -141,8 +142,8 @@ HTML / CSS
 
 Apache Tomcat
 
-MVC Pattern
+MVC Architecture
 
 📄 License
 
-MIT License.
+This project is licensed under the MIT License.
