@@ -83,9 +83,9 @@ CREATE TABLE users (
   username VARCHAR(100),
   password VARCHAR(100)
 );
-
-2. Store Items Table (Example)
-
+```
+### **2. Store Items Table (Example)**
+```sql
 CREATE TABLE store_items (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255),
@@ -93,7 +93,7 @@ CREATE TABLE store_items (
   price DOUBLE
 );
 ```
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 Java Servlets
 
@@ -107,12 +107,12 @@ Apache Tomcat
 
 MVC Architecture
 
-📄 License
+## 📄 License
 
 This project is released under the MIT License.
 You can use, modify, and share this code freely.
 
-✨ Author
+## ✨ Author
 
 Vidushika
 Undergraduate Software Engineering Student
