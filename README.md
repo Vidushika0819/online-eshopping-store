@@ -1,124 +1,118 @@
-**🏨 Hotel Reservation System 
-**
-A web-based Hotel Reservation Management System built using HTML, CSS, PHP, and MySQL.
-This project includes user reservation booking, admin management, venue/room handling, and full CRUD operations for users, reservations, and venues.
+# Online E-Shopping Store (Student Project)
 
-🔧 Features
+This is a simple Java Servlet + JSP based web application created as a university student project.  
+The system includes **Login functionality** and **Store (Stock) Management CRUD operations** using JDBC and MySQL.
 
-👤 User Features
+---
 
-User registration and login
+## 📌 Project Features
 
-Search and book available hotel rooms/venues
+### 🔐 1. Login Module
+- User login page (JSP)
+- Login validation using database
+- `LoginServlet.java` → handles login request  
+- `LoginModel.java` → contains login data  
+- `LoginController.java` → handles business logic  
+- `DBConnection.java` → connects to MySQL
 
-View all reservations
+### 🏪 2. Store / Stock Management Module
+All CRUD operations are implemented:
 
-Cancel reservations
+#### ✔️ Create  
+`InsertServlet.java` – add new store item into database
 
-🛠️ Admin Features
+#### ✔️ Read  
+`GetAllServlet.java` – retrieve all items and show in JSP table
 
-Manage users (CRUD)
+#### ✔️ Update  
+`UpdateServlet.java` – update item details
 
-Manage venues/rooms (CRUD)
+#### ✔️ Delete  
+`DeleteServlet.java` – remove item from database
 
-Manage reservations (CRUD)
+#### ✔️ MVC Structure  
+- `StoreModel.java` – represents store item  
+- `StoreControl.java` – business logic  
+- JSP pages inside `webapp/` folder display UI
 
-Upload venue images
+---
 
-View booking history
+## 🗂️ Project Folder Structure
 
-💳 Payment Simulation
-
-Simple payment page for demo purposes (no real payment processing)
-
-🛠 Tech Stack
-
-Backend: PHP
-Frontend: HTML, CSS
-Database: MySQL (SQL dump included)
-Local Development: XAMPP / WAMP / LAMP
-
-🚀 Quick Setup (Local Development)
-1. Install a local server
-
-XAMPP (Windows)
-
-WAMP (Windows)
-
-LAMP (Linux)
-
-2. Add project to your server
-
-Place your project folder in:
-
-XAMPP → C:\xampp\htdocs\hotel-reservation-system
-
-3. Create the database
-
-Open phpMyAdmin → create:
-
-hotel_reservation_db
-
-4. Import SQL
-
-Inside phpMyAdmin:
-
-Select hotel_reservation_db
-
-Click Import
-
-Choose file:
-
-database/hotel_reservation.sql
-
-
-Or via terminal:
-
-mysql -u root -p hotel_reservation_db < hotel_reservation.sql
-
-5. Configure database connection
-
-Open your DB connection file (example: db_connect.php, config.php, etc.):
-
-$conn = new mysqli('localhost','root','','hotel_reservation_db');
-
-6. Run the project
-
-Start Apache + MySQL.
-
-Open:
-
-http://localhost/hotel-reservation-system/src/index.php
-
-📁 Project Structure
-hotel-reservation-system/
+online-eshopping-store/
 │
-├─ src/                 # PHP pages (user + admin)
+├── src/
+│ └── main/
+│ ├── java/
+│ │ ├── login/
+│ │ │ ├── DBConnection.java
+│ │ │ ├── LoginModel.java
+│ │ │ ├── LoginController.java
+│ │ │ └── LoginServlet.java
+│ │ └── store/
+│ │ ├── StoreModel.java
+│ │ ├── StoreControl.java
+│ │ ├── InsertServlet.java
+│ │ ├── UpdateServlet.java
+│ │ ├── DeleteServlet.java
+│ │ └── GetAllServlet.java
+│ │
+│ └── webapp/
+│ ├── css/
+│ ├── js/
+│ ├── images/
+│ ├── WEB-INF/
+│ ├── META-INF/
+│ └── *.jsp
 │
-├─ assets/
-│   ├─ images/          # Images for UI
-│   └─ uploads/         # Venue image uploads
-│
-├─ database/
-│   └─ hotel_reservation.sql
-│
-└─ README.md
+├── .classpath
+├── .project
+└── LICENSE
 
-✅ Notes & Tips
 
-Do not commit sensitive config files (use .gitignore)
+---
 
-Always sanitize inputs to avoid SQL injection
+## 🛢️ Database Information
 
-Add temporary admin login details here (optional for reviewers)
+Create a MySQL database with tables for:
 
-📞 Contact
+### **1. Login Table (Example)**
+```sql
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100),
+  password VARCHAR(100)
+);
 
-Vidushika Madhushani
-GitHub: Vidushika0819
-Email: (optional — add only if you want)
+2. Store Items Table (Example)
+
+CREATE TABLE store_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  quantity INT,
+  price DOUBLE
+);
+
+🛠️ Technologies Used
+
+Java Servlets
+
+JSP
+
+JDBC
+
+MySQL
+
+Apache Tomcat
+
+MVC Architecture
 
 📄 License
 
 This project is released under the MIT License.
-See LICENSE for details.
+You can use, modify, and share this code freely.
+
+✨ Author
+
+Vidushika
+Undergraduate Software Engineering Student
