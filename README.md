@@ -92,7 +92,7 @@ CREATE TABLE store_items (
   quantity INT,
   price DOUBLE
 );
-
+```
 🛠️ Technologies Used
 
 Java Servlets
