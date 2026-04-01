@@ -113,8 +113,3 @@ MVC architecture
 
 This project is released under the MIT License.
 You can use, modify, and share this code freely.
-
-## ✨ Author
-
-Vidushika
-Undergraduate Software Engineering Student
