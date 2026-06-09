@@ -99,19 +99,13 @@ CREATE TABLE products (
 ```
 ## 🛠️ Technologies Used
 
-Java Servlets
-
-JSP
-
-JDBC
-
-MySQL
-
-HTML, CSS
-
-Apache Tomcat
-
-MVC architecture
+Frontend -	HTML, CSS, JSP
+Backend -	Java Servlets
+Database -	MySQL
+Database Connection -	JDBC
+Local Development Server -	Apache Tomcat
+Code Editor / IDE - Eclipse
+Project Structure -	MVC Architecture
 
 ## 📄 License
 
