@@ -68,7 +68,6 @@ online-eshopping-store/
 │
 ├── .classpath
 ├── .project
-└── LICENSE
 ```
 
 ---
