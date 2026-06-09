@@ -67,7 +67,7 @@ online-eshopping-store/
 │   └── *.jsp
 │
 ├── .classpath
-├── .project
+└── .project
 ```
 
 ---
