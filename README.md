@@ -59,12 +59,12 @@ online-eshopping-store/
 │ │   └── GetAllServlet.java
 │ │
 │ └── webapp/
-│ ├── css/
-│ ├── js/
-│ ├── images/
-│ ├── WEB-INF/
-│ ├── META-INF/
-│ └── *.jsp
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   ├── WEB-INF/
+│   ├── META-INF/
+│   └── *.jsp
 │
 ├── .classpath
 ├── .project
