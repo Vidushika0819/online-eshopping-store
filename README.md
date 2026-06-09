@@ -76,7 +76,7 @@ online-eshopping-store/
 
 ### Create database:
 ```sql
-CREATE DATABASE product;
+CREATE DATABASE product_db;
 ```
 
 ### **1. Login Table (Example)**
