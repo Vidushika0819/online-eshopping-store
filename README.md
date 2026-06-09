@@ -80,18 +80,21 @@ Create a MySQL database with tables for:
 ### **1. Login Table (Example)**
 ```sql
 CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(100),
-  password VARCHAR(100)
+  id int NOT NULL AUTO_INCREMENT,
+  email varchar(100) NOT NULL,
+  password varchar(100) NOT NULL,
+  PRIMARY KEY (id)
 );
 ```
 ### **2. Store Items Table (Example)**
 ```sql
-CREATE TABLE store_items (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255),
-  quantity INT,
-  price DOUBLE
+CREATE TABLE products (
+    product_id INT NOT NULL AUTO_INCREMENT,
+    product_name VARCHAR(100) NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    description TEXT,
+    PRIMARY KEY (product_id)
 );
 ```
 ## 🛠️ Technologies Used
