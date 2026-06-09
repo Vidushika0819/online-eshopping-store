@@ -72,9 +72,30 @@ online-eshopping-store/
 
 ---
 
+## 🛢️ Database Schema
+
+Create database:
+```sql
+CREATE DATABASE tourguide_db;
+```
+
+Create table:
+```sql
+CREATE TABLE guides (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150),
+  age INT,
+  experience INT,
+  language VARCHAR(255)
+);
+```
+
 ## 🛢️ Database Information
 
-Create a MySQL database with tables for:
+### Create database:
+```sql
+CREATE DATABASE product;
+```
 
 ### **1. Login Table (Example)**
 ```sql
