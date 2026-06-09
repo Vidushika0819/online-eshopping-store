@@ -100,17 +100,11 @@ CREATE TABLE products (
 ## 🛠️ Technologies Used
 
 - Frontend -	HTML, CSS, JSP
-
 - Backend -	Java Servlets
-
 - Database -	MySQL
-
 - Database Connection -	JDBC
-
 - Local Development Server -	Apache Tomcat
-
 - Code Editor / IDE - Eclipse
-
 - Project Structure -	MVC Architecture
 
 
