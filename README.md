@@ -50,12 +50,13 @@ online-eshopping-store/
 │ │ │ ├── LoginController.java
 │ │ │ └── LoginServlet.java
 │ │ └── store/
-│ │ ├── StoreModel.java
-│ │ ├── StoreControl.java
-│ │ ├── InsertServlet.java
-│ │ ├── UpdateServlet.java
-│ │ ├── DeleteServlet.java
-│ │ └── GetAllServlet.java
+│ │   ├── DBConnection.java
+│ │   ├── StoreModel.java
+│ │   ├── StoreControl.java
+│ │   ├── InsertServlet.java
+│ │   ├── UpdateServlet.java
+│ │   ├── DeleteServlet.java
+│ │   └── GetAllServlet.java
 │ │
 │ └── webapp/
 │ ├── css/
