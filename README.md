@@ -1,4 +1,4 @@
-🛒# Online E-Shopping Store (Student Project)
+# 🛒 Online E-Shopping Store (Student Project)
 
 This is a simple Java Servlet + JSP based web application created as a university student project.  
 The system includes **Login functionality** and **Store (Stock) Management CRUD operations** using JDBC and MySQL.
